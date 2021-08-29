@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-6</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        .body{
-    background-color: rgba(182, 178, 174, 0.897);
-    color: aliceblue;
-}
-.box1{
-    background-color: white;
-    width: 27%;
-    color: black;
-    border-radius: 10px;
-    height: 20%;
-}
-img{
-    margin: 15px 50px -2px 59px;
-}
-    </style>
-</head>
-<body class="body">
-    <h1>PRACTICAL-6:CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
-    <div class="box1">
-        <img src="htmliamge1.png" alt="">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore perferendis sapiente labore eius tenetur nemo quaerat cupiditate id ut excepturi! Ducimus aliquam maxime amet. Sit, ullam? Quis labore tempora ullam.
-        Dolorem sunt nisi corrupti quam laboriosam suscipit animi facere sit error quaerat laudantium saepe odio est harum officiis minus explicabo excepturi, consectetur labore. Deleniti vel in non, cum nulla facere?
-        Ut necessitatibus fugiat autem rerum recusandae optio consequuntur nam odio veritatis, repudiandae mollitia tempore odit temporibus. Dolorem expedita debitis distinctio accusantium facere, dolore quisquam, odio, cum sequi provident sunt officia.
-        Eius reiciendis debitis eveniet veniam repudiandae aliquid fuga asperiores. Nulla accusantium recusandae quam sed? Quibusdam, maxime in sapiente recusandae, exercitationem consectetur cumque temporibus unde deleniti, labore esse doloribus officia </illo>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, quasi sint! Recusandae at quidem aliquam assumenda iste dolore corrupti blanditiis, possimus quas in, deserunt iure consequuntur fugit cumque tempora eos.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis nulla illum ut tempora consectetur nihil, corporis corrupti nisi quod, voluptate dolorum voluptas repudiandae. Esse unde eveniet autem modi harum.
-        Voluptatibus enim excepturi in reiciendis quidem et, perspiciatis ipsam. A unde illum et aperiam impedit inventore suscipit nobis harum reprehenderit! Adipisci saepe officiis nobis labore impedit? Culpa repudiandae esse in.
-        Ut, non quisquam. Temporibus et sint assumenda distinctio nulla inventore quis eos magni iste saepe. Quas maxime mollitia ullam dignissimos alias reiciendis nesciunt aut itaque repudiandae iusto placeat, cupiditate minus.
-        Doloremque minus odio ipsum mollitia facilis nihil voluptates placeat magni! Perspiciatis sint illum consequatur quisquam nemo itaque officia dolorum. Autem temporibus in suscipit fugit eaque dolorum, cum cumque et tempore?
-       </p>
+        body{
+           background-color: rgb(209, 207, 202);
+        }
+        h1{
+            text-align: center;
+            color: black;
+            
+        }
+        h3{
+          text-align: center;
+          color:black;
+          font-size: 25px;
+        }
+        
+        .container{
+            display:flex;
+        }
+        .box{
+            width:22%;
+           
+          padding:10px;
+          border-radius: 10px;
+          margin:10px;
+          padding-bottom:15px;
+          box-shadow: 10px 10px 10px #000;
+          background-color: whitesmoke;
+         /* border: 2px solid black;*/
+          
+           
+        }
+        .box h2{
+            text-align: center;
+        }
+        .box img{
+            width: 50%;
+            border-radius: 10px;
+            height: 35%;
+            margin: 0px 70px 0px 65px;
+        }
+        
+        
+        .btn{
+            text-align: center;
+            padding:10px;
+           
+        }
+        .btn a{
+            text-decoration: none;
+            color:black;
+             background-color: red;
+            border-radius: 10px;
+            padding-top:12px;
+            padding-left:90px;
+            padding-bottom: 12px;
+            padding-right:90px;
 
+        }
+        .btn a:hover{
+            background-color: blue;
+        }
+    </style>
+    <title>creating cards</title>
+  </head>
+  <body>
+    <h1>PRACTICAL-6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES.</h1>
+    <div class="container">
+     
+      <div class="box" id="box1">
+          <img src="html.png" alt="">
+        <h3>Introduction to HTML</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+          distinctio fuga doloribus sunt at nemo animi ratione assumenda,
+          veritatis voluptas praesentium, voluptatem aperiam asperiores? Ut
+          impedit, repellat, fugit eum quaerat, amet distinctio saepe aut
+          aliquid dicta omnis similique dolorem explicabo minus. 
+        </p>
+        <div class="btn">
+            <a href="https://pranchipandey.github.io/FullStack-Practicals/Practical5/aboutHtml.html">Read More</a>
+        </div>
+      </div>
+    <div class="box" id="box2">
+        <img src="css.png" alt="">
+        <h3>Introduction to CSS</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+            distinctio fuga doloribus sunt at nemo animi ratione assumenda,
+            veritatis voluptas praesentium, voluptatem aperiam asperiores? Ut
+            impedit, repellat, fugit eum quaerat, amet distinctio saepe aut
+            aliquid dicta omnis similique dolorem explicabo minus.
+        </p>
+        <div class="btn">
+            <a href="https://pranchipandey.github.io/FullStack-Practicals/Practical5/aboutCss.html">Read More</a>
+        </div>
     </div>
-    
-</body>
+    <div class="box" id="box3">
+        <img src="js.png" alt="">
+        <h3>Introduction to JS</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+            distinctio fuga doloribus sunt at nemo animi ratione assumenda,
+            veritatis voluptas praesentium, voluptatem aperiam asperiores? Ut
+            impedit, repellat, fugit eum quaerat, amet distinctio saepe aut
+            aliquid dicta omnis similique dolorem explicabo minus.
+        </p>
+        <div class="btn">
+            <a href="https://pranchipandey.github.io/FullStack-Practicals/Practical5/aboutJs.html">Read More</a>
+        </div>
+    </div>
+    <div class="box" id="box4">
+        <img src="bootstrap.jpg" alt="">
+        <h3>Introduction to Bootstrap</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+            distinctio fuga doloribus sunt at nemo animi ratione assumenda,
+            veritatis voluptas praesentium, voluptatem aperiam asperiores? Ut
+            impedit, repellat, fugit eum quaerat, amet distinctio saepe aut
+            aliquid dicta omnis similique dolorem explicabo minus.
+        </p>
+        <div class="btn">
+            <a href="https://pranchipandey.github.io/FullStack-Practicals/Practical5/bootstrap.html">Read More</a>
+        </div>
+    </div>
+    </div>
+  </body>
 </html>
